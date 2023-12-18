@@ -1,0 +1,128 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: rgba(0, 40, 88, 0.6666666667);
+  overflow: hidden;
+}
+
+div.contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.contenedor div.navegador {
+  padding-top: 50px;
+  justify-content: center;
+  width: 13rem;
+  background-color: #002858;
+  height: 100vh;
+}
+div.contenedor div.navegador img {
+  margin: auto;
+  padding-left: 30px;
+}
+div.contenedor div.navegador nav ul li {
+  list-style: none;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-left: -50px;
+}
+div.contenedor div.navegador nav ul li:hover {
+  background-color: #ffc836;
+  color: #002858;
+  cursor: pointer;
+}
+div.contenedor div.listado {
+  width: 85%;
+  text-align: center;
+  padding-top: 50px;
+}
+div.contenedor div.listado h1 {
+  color: #ffc836;
+  font-size: 3em;
+}
+div.contenedor div.listado table.tabla {
+  display: flex;
+  justify-content: center;
+  border-collapse: collapse;
+  color: #ffc836;
+  padding-top: 30px;
+}
+div.contenedor div.listado table.tabla th {
+  color: #002858;
+  background-color: #ffc836;
+  border: #ffc836 2px solid;
+  padding: 10px 0px;
+  text-align: center;
+  width: 8rem;
+}
+div.contenedor div.listado table.tabla td {
+  border: #ffc836 2px solid;
+  width: 8rem;
+  padding: 10px 10px;
+  text-align: center;
+}
+div.contenedor div.listado table.tabla td input {
+  background-color: #ffc836;
+}
+div.contenedor div.listado table.tabla td .tarifa {
+  border: black 1px solid;
+  color: white;
+  padding: 5px;
+}
+div.contenedor div.listado table.tabla tr:hover {
+  background-color: #ffc836;
+  color: #002858;
+}
+div.contenedor div.listado p {
+  color: #ffc836;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal-content {
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  width: 350px;
+  padding: 20px;
+  margin: 100px auto;
+}
+.modal .modal-content .formulario {
+  text-align: center;
+  padding-top: 30px;
+}
+.modal .modal-content .formulario .botonAmarillo {
+  background-color: #ffc836;
+}
+.modal .modal-content .formulario div:hover {
+  background-color: #ffc836;
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal2 .modal-content2 {
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  width: 350px;
+  padding: 20px;
+  margin: 100px auto;
+}/*# sourceMappingURL=style.css.map */

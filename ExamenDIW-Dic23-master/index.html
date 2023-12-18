@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Desarrollo de Interfaces Web</title>
+    <meta name="author" content="Ignacio Pérez Valles">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/app.js"></script>
+    
+</head>
+<body>
+    
+         
+    <div class="contenedor">
+
+        <div class="navegador">
+            <img src="https://www.cesurformacion.com/uploads/media/logo-small/09/19-cesur-fp.svg?v=6-0" alt="Logo Cesur">
+            <nav>
+                <ul>
+                    <li>Listado de entradas</li>
+                    <li><a class="entrada" onclick="abrirModal()">Nueva entrada</a></li>
+                    <li>Clientes</li>
+                    <li>Herramientas</li>
+                <hr></hr>
+                    <li>Salir</li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+        <div class="listado">
+
+           <h1>Listado de entradas</h1>
+           
+           <table class="tabla">
+
+                <tr>
+                    <th>Matrícula</th>
+                    <th>Modelo</th>
+                    <th>Cliente</th>
+                    <th>Fecha de entrada</th>
+                    <th>Fecha de salida</th>
+                    <th>Tarifa</th>
+                    <th>Coste total</th>
+                    <th>Acciones</th>
+
+                </tr>
+                  
+                <tr>
+                    <td>ABC123</td>
+                    <td>Toyota Camry</td>
+                    <td>Juan Pérez</td>
+                    <td>2023-01-05</td>
+                    <td>2023-01-10</td>
+                    <td class="tarifa">Estándar</td>
+                    <td>250€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+                </tr>
+
+                <tr>
+                   
+                    <td>XYZ789</td>
+                    <td>Honda Civic</td>
+                    <td>Maria Rodríguez</td>
+                    <td>2023-02-12</td>
+                    <td>2023-02-18</td>
+                    <td class="tarifa">Premium</td>
+                    <td>280€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+
+                    <td>DEF456</td>
+                    <td>Ford Mustang</td>
+                    <td>Carlos Gómez</td>
+                    <td>2023-03-20</td>
+                    <td>2023-03-25</td>
+                    <td class="tarifa">Oferta</td>
+                    <td>350€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+
+                    <td>GHI789</td>
+                    <td>Chevrolet Malibu</td>
+                    <td>Ana López</td>
+                    <td>2023-04-08</td>
+                    <td>2023-04-15</td>
+                    <td class="tarifa">Estándar</td>
+                    <td>385€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+
+                    <td>JKL012</td>
+                    <td>Nissan Altima</td>
+                    <td>Luis García</td>
+                    <td>2023-05-14</td>
+                    <td>2023-05-20</td>
+                    <td class="tarifa">Premium</td>
+                    <td>270€ </td>   
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td> 
+                    
+                </tr>
+                <tr>
+
+                    <td>MNO345</td>
+                    <td>Hyundai Sonata</td>
+                    <td>Sofía Martinez</td>
+                    <td>2023-06-02</td>
+                    <td>2023-06-08</td>
+                    <td class="tarifa">Estándar</td>
+                    <td>288€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+                    
+                    <td>PQR678</td>
+                    <td>Kia Forte</td>
+                    <td>Pedro Sánchez</td>
+                    <td>2023-07-11</td>
+                    <td>2023-07-18</td>
+                    <td class="tarifa">Oferta</td>
+                    <td>294€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+                    
+                    <td>STU901</td>
+                    <td>Subaru Outback</td>
+                    <td>Marta Torres</td>
+                    <td>2023-08-19</td>
+                    <td>2023-08-25</td>
+                    <td class="tarifa">Premium</td>
+                    <td>360€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+                
+                    <td>VWX234</td>
+                    <td>Mercedes-Benz C-Class</td>
+                    <td>Ricardo Vargas</td>
+                    <td>2023-09-27</td>
+                    <td>2023-10-03</td>
+                    <td class="tarifa">Estándar</td>
+                    <td>480€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                <tr>
+                
+                    <td>YZA567</td>
+                    <td>Audi A4</td>
+                    <td>Isabel López</td>
+                    <td>2023-11-05</td>
+                    <td>2023-11-12</td>
+                    <td class="tarifa">Oferta</td>
+                    <td>525€</td>
+                    <td><input type="button" onclick="abrirModal2()" value="Borrar" /></td>
+
+                </tr>
+                            
+            </table>
+        
+            <p>Creado por Ignacio Pérez Valles</p>
+
+        </div>
+        
+    </div>  
+    
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+          <h2>Insertar nuevo coche</h2>
+          <form class="formulario">
+            <div>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required><br><br>
+            </div>
+            <div>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required><br><br>
+            </div>
+            <div>
+            <label for="cliente">Cliente:</label>
+            <input type="text" id="cliente" name="cliente" required><br><br>
+            </div>
+            <div>
+            <label for="entrada">Entrada:</label>
+            <input type="date" id="entrada" name="entrada"><br><br>
+            </div>
+            <div>
+
+            <label for="salida">Salida:</label>
+            <input type="date" id="salida" name="salida"><br><br>
+            </div>
+            <label for="tarifa">Tarifa:</label>
+            <select id="tarifa" name="tarifa">
+              <option value="tarifa1">Estándar</option>
+              <option value="tarifa2">Premium</option>
+              <option value="tarifa3">Oferta</option>
+            </select><br><br>
+            <button type="button" class="botonAmarillo" onclick="cerrarModal()">Insertar</button>
+            <button type="button" onclick="cerrarModal()">Cancelar</button>
+          </form>
+        </div>
+      </div>
+
+    <div id="miModal2" class="modal2">
+        <div class="modal-content2">
+        <h2>Borrar Coche</h2>
+        <p>¿Deseas borrar la entrada seleccionada?</p>
+        <form class="formulario2">
+        <button type="button" onclick="cerrarModal2()">Borrar</button>
+        <button type="button" onclick="cerrarModal2()">Mantener</button>
+        </form>
+        </div>
+    </div>
+
+</body>
+</html>
